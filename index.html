@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">AS.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact" class="contact-btn">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-text">
+                <span class="greeting animate-text">&#128075; Hello, I'm</span>
+                <h1>Avinash <span class="highlight">Singh</span></h1>
+                <p class="animate-text">Creative Developer & Designer</p>
+                <div class="hero-buttons">
+                    <div class="stats-container animate-up">
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Total Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Mini Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Major Projects</span>
+                        </div>
+                    </div>
+                    <a href="path/to/your/resume.pdf" download class="resume-button animate-up">
+                        <span class="button-content">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-up">
+                <img src="your-photo.jpg" alt="Avinash Singh">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a passionate web developer with expertise in creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-nav">
+            <button class="nav-button" onclick="showProjects('mini')">Mini Projects</button>
+            <button class="nav-button" onclick="showProjects('major')">Major Projects</button>
+        </div>
+
+        <div class="projects-category" id="mini-projects">
+            <h3>Mini Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="mini-project1.jpg" alt="Mini Project 1">
+                    <h3>Mini Project 1</h3>
+                    <p>Description of mini project 1</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="mini-project2.jpg" alt="Mini Project 2">
+                    <h3>Mini Project 2</h3>
+                    <p>Description of mini project 2</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <!-- Add more mini projects as needed -->
+            </div>
+        </div>
+
+        <div class="projects-category" id="major-projects">
+            <h3>Major Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="frvs.png" alt="FR Voting System">
+                    <h3>FR Voting System</h3>
+                    <p>The Face Recognition Online Voting System project aims to modernize and secure the voting process using advanced face recognition technology. This system ensures that only eligible voters can cast their ballots, thereby preventing voter fraud and enhancing the overall integrity of elections.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="major-project2.jpg" alt="Major Project 2">
+                    <h3>Major Project 2</h3>
+                    <p>Description of major project 2</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <!-- Add more major projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Avinash Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("cbC_K7HLNn_sKhTlJ");
+       })();
+    </script>
+</body>
+</html> 
