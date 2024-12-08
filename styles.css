@@ -547,7 +547,7 @@ footer {
     }
 
     .hero-image {
-        max-width: 500px;
+        max-width: 300px;
         margin: 0 auto;
     }
 }
@@ -558,11 +558,12 @@ footer {
     }
     
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .about-content {
         grid-template-columns: 1fr;
+        text-align: center;
     }
     
     .skills ul {
@@ -570,11 +571,20 @@ footer {
     }
     
     .stats-container {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
     .resume-button {
         align-self: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
     }
 }
 
@@ -632,4 +642,8 @@ footer {
 
 .nav-button:hover {
     background: var(--accent-color);
+}
+
+.contact-content {
+    padding: 0 1rem;
 } 
